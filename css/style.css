@@ -13,7 +13,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh; /* İstenilen yükseklik değeri */
+    height: 50%; /* İstenilen yükseklik değeri */
+}
+.butonlar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%; /* İstenilen yükseklik değeri */
 }
 .form-group{
     width: 100%;

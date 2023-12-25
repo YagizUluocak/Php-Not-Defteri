@@ -9,6 +9,17 @@ class Not extends Db
         $stmt->execute();
         return $stmt->fetchAll();
     }
+
+    public function notEkle($not_baslik, $not_icerik, $oncelik_id)
+    {
+        $query = "INSERT INTO notlar(not_baslik, not_icerik, oncelik_id) VALUES (:not_baslik, :not_icerik, :oncelik_id)";
+        $stmt = $this->connect()->prepare($query);
+        return $stmt->execute([
+            'not_baslik' => $not_baslik,
+            'not_icerik' => $not_icerik,
+            'oncelik_id' => $oncelik_id
+        ]);
+    }
 }
 class Oncelik extends Db
 {
