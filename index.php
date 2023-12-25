@@ -1,6 +1,9 @@
-<!-- Header Başlangıç -->
-<?php include "./inc/_header.php"?>
-<!-- Header Bitiş -->
+<?php 
+require_once ('./classes/db.class.php');
+include "./classes/functions.classes.php";
+include "./inc/_header.php";
+?>
+
 
   <body>
 
