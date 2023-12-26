@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 25 Ara 2023, 23:56:12
+-- Üretim Zamanı: 26 Ara 2023, 19:57:46
 -- Sunucu sürümü: 10.4.32-MariaDB
 -- PHP Sürümü: 8.0.30
 
@@ -39,12 +39,7 @@ CREATE TABLE `notlar` (
 --
 
 INSERT INTO `notlar` (`not_id`, `not_baslik`, `not_icerik`, `oncelik_id`) VALUES
-(1, 'Fonksiyonel Navbar', 'Sol tarafta bulunan form elemanlarını içeren div alanı Bir hamburger menü aracılığı ile açılır kapanır hale getirilecek. Kapalı olduğu zaman notlar kısmı tüm ekranı kaplayacak (col-12) form alanı açıldığı zaman ise notlar alanı küçülerek col-8 boyutuna geri getirilecek.', 1),
-(2, 'Bitiş Tarihi', 'Eklenen not\'a bitiş tarihi de eklenilecek ve kullanıcı bu notun ne zaman biteceğini de görmüş olacak', 2),
-(3, 'Tamamlanmış Notlar', 'Yeni bir alan oluşturulacak. Kullanıcı Notlar tablosundan tamamladığı notu (Tamamlanan-Notlar) tablosuna taşıyacak  ve ekranda tamamlanmış notlar ve tamamlanma zamanı (Tamamlanan Notlar tablosuna taşınma zamanı) gösterilecek ve buradaki notlardan tekrar Notlar tablosuna taşınabilecek veya silinebilecek.', 3),
-(10, 'YENİ', 'YENİ', 1),
-(11, 'asd', 'asd', 2),
-(12, 'asdddddd', 'asdd', 2);
+(1, 'Lorem İpsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 1);
 
 -- --------------------------------------------------------
 
@@ -92,7 +87,7 @@ ALTER TABLE `oncelik`
 -- Tablo için AUTO_INCREMENT değeri `notlar`
 --
 ALTER TABLE `notlar`
-  MODIFY `not_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `not_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `oncelik`

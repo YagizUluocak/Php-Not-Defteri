@@ -1,37 +1,18 @@
 <?php 
+// index.php üzerinde notlarımızı gördüğümüz alertbox içerisindeki modal(açılıp kapanan pencere)de Get ile gelen not_id'yi alabilmek için index.php'nin kopyasını oluşturup düzenleme için kullanacağımız modalı yeni bir sayfada tanımlayarak bir nevi köprü oluşturduk. (modal-index.php) bu sasfanın içerisinede modal-duzenle.php sayfamızı include ederek güncelleme işlemini yaptık.
+
+// index.php -> 1 numaralı düzenle butonu =>  /not/modal-index.php?not_id=1 -> modal-duzenle.php(içerisinde düzenleme formu).
+
 require_once ('./classes/db.class.php');
 include "./classes/functions.classes.php";
 include "./inc/_header.php";
-
 
 $id = $_GET["not_id"];
 ?>
 <?php 
 $oncelik = new Oncelik();
 $oncelikGetir = $oncelik->oncelikGetir();
-
-
-$not_id = $_GET["not_id"];
-$notlar = new Not();
-$notGetir = $notlar->notIdGetir($not_id);
-
-
-if(isset($_POST["submit"]))
-{
-    $not_baslik = $_POST["not_baslik"];
-    $not_icerik = $_POST["not_icerik"];
-    $oncelik_id = $_POST["oncelik_id"];
-
-    $notGetir = new Not();
-    if($notGetir->notGuncelle($not_id, $not_baslik, $not_icerik, $oncelik_id))
-    {
-        echo "<script>window.location.href='index.php';</script>";
-
-    }
-}
 ?>
-
-
   <body>
     <div class="container-fluid">
       <div class="row">
@@ -42,8 +23,11 @@ if(isset($_POST["submit"]))
 
         <!-- Notlar Başlangıç -->
         <?php include "./data/notlar.php"?>
-        <?php include "./data/modal-duzenle.php"?>
         <!-- Notlar Bitiş -->
+
+        <!-- Modal Düzenle Başlangıç -->
+        <?php include "./data/modal-duzenle.php"?>
+        <!-- Modal Düzenle Bitiş -->
 
       </div>
     </div>

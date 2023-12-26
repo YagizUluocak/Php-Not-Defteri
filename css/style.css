@@ -84,6 +84,11 @@ select.onceliklist option.option2
 .model{
     background-color: rgb(62, 74, 89);
 }
+.btntamamla{
+    position: absolute;
+    top: 40px; /* Ayarlayabilirsiniz */
+    right: 5px; /* Ayarlayabilirsiniz */
+}
 
 
 
