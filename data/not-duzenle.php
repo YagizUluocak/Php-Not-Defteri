@@ -1,6 +1,17 @@
+<?php
+require_once ('../classes/db.class.php');
+include "../classes/functions.classes.php";
+include "../inc/_header.php";
+?>
+
 <?php 
 $oncelik = new Oncelik();
 $oncelikGetir = $oncelik->oncelikGetir();
+
+$not_id = $_GET["not_id"];
+$not = new Not();
+$notGetir = $not->notIdGetir($not_id);
+
 if(isset($_POST["submit"]))
 {
     $not = new Not();
@@ -9,13 +20,12 @@ if(isset($_POST["submit"]))
     $not_icerik = $_POST["not_icerik"];
     $oncelik_id = $_POST["oncelik_id"];
 
-    if($not->notEkle($not_baslik, $not_icerik, $oncelik_id))
+    if($not->notGuncelle($not_id,$not_baslik, $not_icerik, $oncelik_id))
     {
         echo "<script>window.location.href='index.php';</script>";
     }
 }
 ?>
-
 
 <div class="col-3 form-div">
     <div>
@@ -63,3 +73,4 @@ if(isset($_POST["submit"]))
     </div>
 
 </div>
+

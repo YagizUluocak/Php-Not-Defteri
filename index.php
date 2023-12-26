@@ -2,9 +2,6 @@
 require_once ('./classes/db.class.php');
 include "./classes/functions.classes.php";
 include "./inc/_header.php";
-
-
-
 ?>
 
 
@@ -19,6 +16,7 @@ include "./inc/_header.php";
 
         <!-- Notlar Başlangıç -->
         <?php include "./data/notlar.php"?>
+        <?php include "./data/modal.php"?>
         <!-- Notlar Bitiş -->
 
       </div>

@@ -73,5 +73,17 @@ select.onceliklist option.option2
     font-weight: bolder;
     margin-top: 22px;
 }
+.alert{
+    position: relative;
+}
+.btnmodal{
+    position: absolute;
+    top: 10px; /* Ayarlayabilirsiniz */
+    right: 5px; /* Ayarlayabilirsiniz */
+}
+.model{
+    background-color: rgb(62, 74, 89);
+}
+
 
 
