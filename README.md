@@ -1,5 +1,5 @@
 To-Do List Web Uygulaması
-Bu proje, To-Do List mantığı üzerine kurulu bir web uygulamasıdır. CRUD (Create, Read, Update, Delete) işlemlerini içerir ve nesne tabanlı programlama prensiplerine uygun olarak geliştirilmiştir.
+Bu proje, To-Do List mantığı üzerine kurulu bir web uygulamasıdır. CRUD (Create, Read, Update, Delete) işlemlerini içerir ve OOP prensiplerine uygun olarak geliştirilmiştir.
 
 Ana Sayfa ve Güncelleme İşlemleri
 Ana sayfa, kaydedilen görevleri listeler ve her görev için güncelleme yapılabilmesi için bir modal yapısı sunar. Bunun için modal-index.php, index.php dosyasının bir kopyası olarak oluşturulmuş ve düzenleme 
