@@ -10,6 +10,8 @@ Proje içerisinde, öncelikler ve notlar arasında bir ilişki kurulmuştur. Ön
 Bu sayede her bir görev, önceliklere bağlı olarak organize edilebilir.
 
 
+
+
 ![ana-sayfa](https://github.com/YagizUluocak/Php-Not-Defteri/assets/67549827/e7a516fd-bf97-490f-97cc-86aa5815416a)
 
 
